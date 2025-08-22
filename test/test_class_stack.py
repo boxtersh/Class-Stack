@@ -1,10 +1,9 @@
 import pytest
-import main
+from stack import Stack
 
 @pytest.fixture
 def stack():
-    return main.Stack()
-
+    return Stack()
 
 def test_stack_is_empty(stack):
 
